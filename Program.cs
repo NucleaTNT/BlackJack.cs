@@ -95,3 +95,6 @@ switch (gameOutcome) {
         throw new ArgumentOutOfRangeException("gameOutcome",
             "Failed to determine this rounds winner!");
 }
+
+Console.WriteLine("Press any key to exit...");
+Console.ReadKey();
