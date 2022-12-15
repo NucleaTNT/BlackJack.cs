@@ -1,7 +1,7 @@
 ﻿using BlackJack;
 
 void DealerChoiceLoop(Deck deck, Hand dealerHand) {
-    while (dealerHand.Value < 17 && !dealerHand.IsHandBust) {
+    while (dealerHand is { Value: < 17, IsHandBust: false }) {
         dealerHand.AddCard(deck.DrawAvailableCard());
     }
 }
@@ -15,10 +15,12 @@ void PlayerChoiceLoop(Deck deck, Hand playerHand) {
                 (i + 1 == playerHand.Size ? "]\n" : ", "));
         }
 
-        char playerInput;
+        char playerInput = ' ';
         do {
             Console.Write("Would you like to [h]it or [s]tick? ");
-            playerInput = Console.ReadLine()!.ToLower()[0];
+            string? playerInp = Console.ReadLine();
+			if (playerInp == string.Empty) continue;
+            playerInput = playerInp!.Trim().ToLower()[0];
             Console.WriteLine();
         } while (playerInput is not ('h' or 's'));
 

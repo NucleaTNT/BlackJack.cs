@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "64eeTL0M9hhSJ054ePERh9K9l9ahcBiXmgcPutXpy0U/CSsFq5XU2X4FY+95hzxNfmkIIJBxpAUemOT2CXcG7Q==",
+  "dgSpecHash": "Z5oLrAojEB7bG5pyr+f9nIm1MqXoUpwOzXOr0ljTnkIw3mkNRYXDX0BwfnjhKXZ3iD8A73nrXSCC/VVDG2ns9w==",
   "success": true,
-  "projectFilePath": "/home/nucleatnt/Dev/BlackJack/BlackJack.csproj",
+  "projectFilePath": "/home/nucleatnt/Dev/C#/BlackJack/BlackJack.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
