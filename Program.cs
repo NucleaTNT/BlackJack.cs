@@ -21,12 +21,6 @@ void PlayerChoiceLoop(Deck deck, Hand playerHand) {
             Console.Write("Would you like to [h]it or [s]tick? ");
             string? playerInp = Console.ReadLine();
 			if (playerInp == string.Empty) continue;
-
-
-			//
-			// AMONGUS
-			//
-
             playerInput = playerInp!.Trim().ToLower()[0];
             Console.WriteLine();
         } while (playerInput is not ('h' or 's'));
